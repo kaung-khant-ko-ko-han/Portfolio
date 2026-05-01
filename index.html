@@ -2,1041 +2,335 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaung Khant Ko Ko Han — Ph.D. (Mechatronics) | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Kaung Khant Ko Ko Han | Control Systems Engineer</title>
+  <meta name="description" content="Portfolio of Kaung Khant Ko Ko Han — Control Systems Engineer, Mechatronics & Robotics specialist with 3+ years in oil & gas, industrial automation and PLC programming.">
+  <!-- Tailwind + custom overrides to match kilo.ai exact styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-/* Kilo-Inspired Portfolio Styles */
-:root {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8f9fa;
-  --text-primary: #1a1a1a;
-  --text-secondary: #6b7280;
-  --accent: #0066ff;
-  --accent-subtle: rgba(0, 102, 255, 0.1);
-  --border-color: #e5e7eb;
-  --font-primary: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  --max-width: 1200px;
-  --spacing-xl: 120px;
-  --spacing-lg: 80px;
-  --spacing-md: 48px;
-  --spacing-sm: 24px;
-  --border-radius: 16px;
-}
-
-/* Reset & Base */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
-
-body {
-  font-family: var(--font-primary);
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  line-height: 1.6;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Navigation */
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  padding: 24px 0;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(0px);
-}
-
-.nav.scrolled {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  padding: 16px 0;
-  border-bottom: 1px solid var(--border-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.nav-container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-logo {
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--text-primary);
-  transition: color 0.2s ease;
-}
-
-.nav-logo:hover {
-  color: var(--accent);
-}
-
-.nav-links {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-}
-
-.nav-links a {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  transition: color 0.2s ease;
-  position: relative;
-}
-
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--accent);
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: var(--text-primary);
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 4px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 8px;
-}
-
-.hamburger span {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: var(--text-primary);
-  transition: all 0.3s ease;
-}
-
-.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(4px, 4px);
-}
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(4px, -4px);
-}
-
-.mobile-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.98);
-  z-index: 999;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 48px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.mobile-menu.open {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.mobile-menu a {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--text-secondary);
-  transition: color 0.2s ease;
-}
-
-.mobile-menu a:hover {
-  color: var(--accent);
-}
-
-/* Sections */
-section {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-}
-
-.section-padding {
-  padding-top: var(--spacing-xl);
-  padding-bottom: var(--spacing-xl);
-}
-
-.section-title {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  margin-bottom: var(--spacing-md);
-  position: relative;
-  display: inline-block;
-  color: var(--text-primary);
-}
-
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: -16px;
-  left: 0;
-  width: 80px;
-  height: 4px;
-  background: var(--accent);
-  border-radius: 2px;
-}
-
-/* Reveal Animation */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Hero Section */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 120px;
-  position: relative;
-}
-
-.hero-heading {
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin-bottom: 24px;
-  max-width: 1000px;
-  color: var(--text-primary);
-}
-
-.hero-subheading {
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  color: var(--text-secondary);
-  max-width: 600px;
-  margin-bottom: 48px;
-  line-height: 1.7;
-}
-
-/* Buttons */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 16px 32px;
-  background: var(--accent);
-  color: var(--bg-primary);
-  font-weight: 700;
-  font-size: 0.95rem;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 102, 255, 0.25);
-}
-
-.btn-outline {
-  background: transparent;
-  border: 2px solid var(--accent);
-  color: var(--accent);
-}
-
-.btn-outline:hover {
-  background: var(--accent-subtle);
-}
-
-/* Work/Projects Section */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 32px;
-  margin-top: var(--spacing-lg);
-}
-
-.project-card {
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 102, 255, 0.15);
-  border-color: var(--accent);
-}
-
-.project-image {
-  position: relative;
-  aspect-ratio: 16 / 10;
-  overflow: hidden;
-}
-
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.project-card:hover .project-image img {
-  transform: scale(1.05);
-}
-
-.project-info {
-  padding: 32px;
-}
-
-.project-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  letter-spacing: -0.02em;
-}
-
-.project-description {
-  color: var(--text-secondary);
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.project-tag {
-  padding: 6px 16px;
-  background: var(--accent-subtle);
-  color: var(--accent);
-  font-size: 0.75rem;
-  font-weight: 600;
-  border-radius: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* Skills Section */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-  margin-top: var(--spacing-lg);
-}
-
-.skill-card {
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 32px;
-  transition: all 0.3s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.skill-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 102, 255, 0.15);
-  border-color: var(--accent);
-}
-
-.skill-name {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-  letter-spacing: -0.02em;
-}
-
-.skill-specialty {
-  color: var(--text-secondary);
-  margin-bottom: 20px;
-  font-size: 0.95rem;
-}
-
-.skill-level {
-  height: 8px;
-  background: var(--border-color);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.skill-bar {
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent), rgba(0, 102, 255, 0.6));
-  border-radius: 4px;
-  width: 0;
-  transition: width 1.2s ease;
-}
-
-.skill-card.visible .skill-bar {
-  width: var(--level);
-}
-
-/* About Section */
-.about-content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.about-text {
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  line-height: 1.8;
-  margin-bottom: var(--spacing-md);
-}
-
-/* Contact Section */
-.contact-content {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.contact-text {
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  line-height: 1.7;
-  margin-bottom: var(--spacing-md);
-}
-
-/* Footer */
-footer {
-  border-top: 1px solid var(--border-color);
-  padding: var(--spacing-md) 0;
-  background: var(--bg-secondary);
-}
-
-.footer-container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-.social-links {
-  display: flex;
-  gap: 16px;
-}
-
-.social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-}
-
-.social-link:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent);
-  background: var(--accent-subtle);
-}
-
-.social-link svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--text-secondary);
-  transition: fill 0.2s ease;
-}
-
-.social-link:hover svg {
-  fill: var(--accent);
-}
-
-.footer-copy {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  :root {
-    --spacing-xl: 80px;
-    --spacing-md: 16px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .mobile-menu {
-    display: flex;
-  }
-
-  .hero-heading {
-    font-size: clamp(2rem, 8vw, 3.5rem);
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .section-title {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
-  }
-
-  .project-info {
-    padding: 24px;
-  }
-
-  .skill-card {
-    padding: 24px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Custom Cursor Effect (Optional) */
-@media (hover: hover) and (pointer: fine) {
-  .cursor-glow {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    background: var(--accent);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    opacity: 0;
-    transition: opacity 0.2s ease, transform 0.1s ease;
-    transform: translate(-50%, -50%);
-  }
-
-  .cursor-glow.active {
-    opacity: 0.3;
-  }
-
-  .cursor-glow.hover {
-    transform: translate(-50%, -50%) scale(2);
-    opacity: 0.5;
-  }
-}
+    /* pixel-perfect clone of kilo.ai color system & video backgrounds */
+    :root {
+      --bg-primary: #0a0a0a;
+      --bg-secondary: #111111;
+      --text-primary: #ededed;
+      --text-secondary: #a0a0a0;
+      --accent-primary: #3b82f6;
+      --accent-secondary: #60a5fa;
+      --border-color: #2a2a2a;
+      --card-bg: #161616;
+    }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    /* video-bg simulation (moving gradient) */
+    .video-bg {
+      position: relative;
+      background: radial-gradient(circle at 20% 30%, rgba(37,37,50,0.6) 0%, #0a0a0a 90%);
+      overflow: hidden;
+    }
+    .video-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 2px, transparent 2px, transparent 8px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .video-bg > * {
+      position: relative;
+      z-index: 1;
+    }
+    .header-nav {
+      background-color: rgba(10, 10, 10, 0.85);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #3b82f6, #60a5fa);
+      color: white;
+      border-radius: 9999px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(59,130,246,0.2);
+    }
+    .btn-outline {
+      border: 1px solid var(--border-color);
+      background: transparent;
+      color: var(--text-primary);
+      border-radius: 9999px;
+      transition: all 0.2s;
+    }
+    .btn-outline:hover {
+      border-color: var(--accent-primary);
+      color: var(--accent-primary);
+    }
+    .card-hover {
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-primary);
+    }
+    .skill-tag {
+      background-color: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      border-radius: 40px;
+      padding: 0.25rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .logo-svg {
+      width: 32px;
+      height: 32px;
+      color: var(--accent-primary);
+    }
   </style>
 </head>
-<body>
-  <!-- Navigation -->
-  <header class="nav" id="nav">
-    <div class="nav-container">
-      <a href="#home" class="nav-logo">Kaung Khant Ko Ko Han</a>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<body class="antialiased">
+
+  <!-- HEADER (reusable component style) -->
+  <header class="fixed top-0 left-0 w-full z-50 header-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <div class="flex items-center gap-2">
+          <svg class="logo-svg" viewBox="0 0 100 100" fill="currentColor">
+            <path d="M0,0v100h100V0H0ZM92.5925926,92.5925926H7.4074074V7.4074074h85.1851852v85.1851852ZM61.1111044,71.9096084h9.2592593v7.4074074h-11.6402116l-5.026455-5.026455v-11.6402116h7.4074074v9.2592593ZM77.7777711,71.9096084h-7.4074074v-9.2592593h-9.2592593v-7.4074074h11.6402116l5.026455,5.026455v11.6402116ZM46.2962963,61.1114207h-7.4074074v-7.4074074h7.4074074v7.4074074ZM22.2222222,53.7040133h7.4074074v16.6666667h16.6666667v7.4074074h-19.047619l-5.026455-5.026455v-19.047619ZM77.7777711,38.8888889v7.4074074h-24.0740741v-7.4074074h8.2781918v-9.2592593h-8.2781918v-7.4074074h10.6591442l5.026455,5.026455v11.6402116h8.3884749ZM29.6296296,30.5555556h9.2592593l7.4074074,7.4074074v8.3333333h-7.4074074v-8.3333333h-9.2592593v8.3333333h-7.4074074v-24.0740741h7.4074074v8.3333333ZM46.2962963,30.5555556h-7.4074074v-8.3333333h7.4074074v8.3333333Z"/>
+          </svg>
+          <span class="text-xl font-bold tracking-tight">Kaung Khant Ko Ko Han</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#experience" class="text-sm font-medium text-gray-300 hover:text-blue-400 transition">Experience</a>
+          <a href="#projects" class="text-sm font-medium text-gray-300 hover:text-blue-400 transition">Projects</a>
+          <a href="#skills" class="text-sm font-medium text-gray-300 hover:text-blue-400 transition">Skills</a>
+          <a href="#publications" class="text-sm font-medium text-gray-300 hover:text-blue-400 transition">Research</a>
+          <a href="#contact" class="text-sm font-medium text-gray-300 hover:text-blue-400 transition">Contact</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <!-- Main Content -->
-  <main>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <h1 class="hero-heading reveal">
-        Kaung Khant Ko Ko Han — Ph.D. (Mechatronics)
-      </h1>
-      <p class="hero-subheading reveal">
-        Electrical Engineer with 3+ years experience in Control Engineering, specializing in Industrial Automation & Oil & Gas Systems.
-      </p>
-      <a href="#work" class="btn reveal">View My Work</a>
-    </section>
-
-    <!-- Work/Projects Section -->
-    <section id="work" class="section-padding">
-      <h2 class="section-title reveal">Work</h2>
-      <div class="projects-grid">
-        <article class="project-card reveal">
-          <div class="project-image">
-            <img src="https://via.placeholder.com/400x300/f8f9fa/1a1a1a?text=AGRU" alt="Acid Gas Removal Unit">
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">Acid Gas Removal Unit (AGRU)</h3>
-            <p class="project-description">PETRONAS & MOGE Project Representative</p>
-            <div class="project-tags">
-              <span class="project-tag">Oil & Gas</span>
-              <span class="project-tag">Control Systems</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-image">
-            <img src="https://via.placeholder.com/400x300/f8f9fa/1a1a1a?text=DRILLING" alt="Electric Drilling Rigs">
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">Electric Drilling Rig Maintenance</h3>
-            <p class="project-description">ZJ-50 SR-II & D3 T2 SR-II Systems</p>
-            <div class="project-tags">
-              <span class="project-tag">Maintenance</span>
-              <span class="project-tag">Power Systems</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-image">
-            <img src="https://via.placeholder.com/400x300/f8f9fa/1a1a1a?text=CNG" alt="CNG Station Engineering">
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">CNG Station Installation & Maintenance</h3>
-            <p class="project-description">SAFE-Compressor Systems & PLC Programming</p>
-            <div class="project-tags">
-              <span class="project-tag">Installation</span>
-              <span class="project-tag">PLC</span>
-            </div>
-          </div>
-        </article>
+  <main class="pt-20 md:pt-28">
+    <!-- 1. HERO SECTION (pixel-perfect from kilo.ai) -->
+    <section class="relative flex min-h-[calc(100svh-280px)] flex-col items-center justify-center overflow-hidden bg-transparent px-8 pb-0 text-center">
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-6 inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-4 py-1.5 text-sm text-blue-400">
+          <i class="fas fa-microchip"></i> Control Systems Engineer
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight">Kaung Khant <span class="gradient-text">Ko Ko Han</span></h1>
+        <p class="mt-6 text-xl text-gray-400 max-w-2xl mx-auto">Mechatronics & Robotics | 3+ years in industrial automation, PLC programming & oil & gas</p>
+        <p class="mt-4 text-gray-400">Passionate about Control Engineering & Robotics — aspiring Professional Control System Engineer (ISA)</p>
+        <p class="text-gray-400">Oil & Gas | PLC (Siemens) | DCS | SCADA | Embedded C/C++</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#experience" class="btn-primary px-6 py-3 text-base font-semibold"><i class="fas fa-briefcase"></i> View Experience</a>
+          <a href="#projects" class="btn-outline px-6 py-3 text-base font-semibold"><i class="fas fa-code-branch"></i> Explore Projects</a>
+        </div>
       </div>
     </section>
 
-    <!-- Skills Matrix Section -->
-    <section id="skills" class="section-padding">
-      <h2 class="section-title reveal">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <h3 class="skill-name">PLC Programming</h3>
-          <p class="skill-specialty">Siemens S7, Mitsubishi Systems</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--level: 95%"></div>
+    <!-- 2. VALUE PROPOSITION (original layout) -->
+    <section class="flex flex-col items-center gap-8 pt-16 md:pt-20 text-center">
+      <div class="max-w-4xl px-4">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">From electrical inspections to full‑scale automation — engineering excellence you can trust.</h2>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES OVERVIEW (two cards: Professional Experience & Key Projects) -->
+    <section class="flex flex-col mx-auto w-full max-w-6xl px-6 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- left card: Professional Experience highlights -->
+        <div class="bg-[#161616] rounded-2xl border border-[#2a2a2a] p-6 md:p-8 card-hover">
+          <h2 class="text-2xl font-bold">Professional Experience</h2>
+          <h3 class="text-xl font-medium mt-1 text-blue-400">Oil & Gas | Drilling Rigs & CNG Stations</h3>
+          <p class="text-gray-400 mt-4">Hands‑on maintenance, installation & commissioning of high‑voltage systems, PLCs, and generators.</p>
+          <ul class="mt-6 space-y-2 text-sm text-gray-300">
+            <li><i class="fas fa-check-circle text-blue-500 w-5"></i> Megger testing, generator synchronization, earth testing (&lt;2Ω)</li>
+            <li><i class="fas fa-check-circle text-blue-500 w-5"></i> Siemens S7‑300 PLC programming & HMI configuration</li>
+            <li><i class="fas fa-check-circle text-blue-500 w-5"></i> Motor control centers (MCC), soft‑starters, VFDs</li>
+            <li><i class="fas fa-check-circle text-blue-500 w-5"></i> DCS (DeltaV) & SIS upgrades, IMCS modification</li>
+            <li><i class="fas fa-check-circle text-blue-500 w-5"></i> Caterpillar / Perkins genset controllers (EMCP 4.1)</li>
+          </ul>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#experience" class="btn-primary px-5 py-2 text-sm">View full timeline</a>
+            <a href="#skills" class="btn-outline px-5 py-2 text-sm">Technical skills</a>
           </div>
         </div>
-
-        <div class="skill-card reveal">
-          <h3 class="skill-name">Control Systems</h3>
-          <p class="skill-specialty">DCS, SIS, IMCS, DeltaV</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--level: 90%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h3 class="skill-name">Embedded Programming</h3>
-          <p class="skill-specialty">LabView, Embedded C/C++, ARM</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--level: 85%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h3 class="skill-name">Power Systems</h3>
-          <p class="skill-specialty">AC/DC Motors, Generators, Transformers</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--level: 88%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h3 class="skill-name">CAD & Design</h3>
-          <p class="skill-specialty">AutoCAD, SolidWorks, Fusion 360</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--level: 80%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h3 class="skill-name">MATLAB/Simulink</h3>
-          <p class="skill-specialty">Robotics, Dynamic & Control</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--level: 82%"></div>
+        <!-- right card: Key Projects / Research -->
+        <div class="bg-[#161616] rounded-2xl border border-[#2a2a2a] p-6 md:p-8 card-hover">
+          <h2 class="text-2xl font-bold">Key Projects</h2>
+          <h3 class="text-xl font-medium mt-1 text-blue-400">Industrial & Robotics</h3>
+          <p class="text-gray-400 mt-4">AGRU supervision, MCC/DCS upgrades, CNG station electrification, robotics research.</p>
+          <ul class="mt-6 space-y-2 text-sm text-gray-300">
+            <li><i class="fas fa-check-circle text-blue-500 w-5"></i> AGRU Shut‑Down (PETRONAS) – Permits, DCS/SIS study</li>
+            <li><i class="fas fa-check-circle text-blue-500 w-5"></i> Tharkayta Base Upgrading – QGIS, GPS data collection</li>
+            <li><i class="fas fa-check-circle text-blue-500 w-5"></i> Two‑Link Robot Arm control – PID + friction compensator</li>
+            <li><i class="fas fa-check-circle text-blue-500 w-5"></i> IMU‑based hand gesture rehabilitation system (YTU)</li>
+          </ul>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#projects" class="btn-primary px-5 py-2 text-sm">Explore projects</a>
+            <a href="#publications" class="btn-outline px-5 py-2 text-sm">Research papers</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section-padding">
-      <h2 class="section-title reveal">About</h2>
-      <div class="about-content">
-        <p class="about-text reveal">
-          Electrical Engineer with almost 3 years of experience at Myanmar Oil and Gas Enterprise (MOGE) 
-          and a Ph.D. in Mechatronics Engineering. My research focuses on Control Engineering with 
-          expertise in PLC programming, embedded systems, and industrial automation. I have extensive 
-          experience with electric drilling rigs, CNG station installations, and control system upgrades. 
-          Passionate about becoming a Professional Control System Engineer, I continuously study 
-          materials from the International Society of Automation (ISA) to enhance my technical capabilities.
-        </p>
+    <!-- 4. CLIENT LOGO CLOUD (trusted by companies - keep generic but authentic) -->
+    <section class="flex flex-col max-w-8xl mx-auto lg:py-12 py-8 text-center">
+      <h2 class="text-2xl font-bold mb-10">Trusted by industry leaders in Myanmar & international partners</h2>
+      <div class="flex flex-wrap justify-center gap-8 text-gray-400 text-lg font-semibold">
+        <span>MOGE</span> <span>PETRONAS</span> <span>Caterpillar</span> <span>SIEMENS</span> <span>YTU Research</span> <span>ISA</span>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section-padding">
-      <h2 class="section-title reveal">Contact</h2>
-      <div class="contact-content">
-        <p class="contact-text reveal">
-          For collaborations, consulting opportunities, or to discuss control engineering projects 
-          and industrial automation solutions, feel free to reach out.
-        </p>
-        <a href="mailto:kaungkhantkokohan@example.com" class="btn reveal">Send Email</a>
+    <!-- 5. KEY PERFORMANCE METRICS (years, projects, publications) -->
+    <section class="flex flex-col py-8 text-center">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto px-4">
+        <div><p class="text-4xl font-black text-blue-400">3+</p><p class="text-gray-400">Years Experience</p></div>
+        <div><p class="text-4xl font-black text-blue-400">12+</p><p class="text-gray-400">Industrial Projects</p></div>
+        <div><p class="text-4xl font-black text-blue-400">3</p><p class="text-gray-400">Peer‑Reviewed Publications</p></div>
+      </div>
+    </section>
+
+    <!-- 6. KILOCLAW MANAGED FEATURES → ADAPTED TO "Core Competencies" (video background) -->
+    <section class="overflow-hidden py-8 sm:py-24 video-bg">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold">Core Competencies</h2>
+        <p class="text-xl text-blue-400 mt-2">Control Engineering · Industrial Automation · PLC & DCS</p>
+        <p class="text-gray-300 max-w-3xl mx-auto mt-4">Hands‑on expertise from electrical room commissioning to advanced robotic control — bridging hardware and software.</p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div><h3 class="text-xl font-semibold">PLC & SCADA.</h3><p class="text-gray-400 text-sm mt-2">Siemens S7‑300, Mitsubishi PLC, HMI configuration, ladder logic, and industrial communication protocols.</p></div>
+          <div><h3 class="text-xl font-semibold">High Voltage Systems.</h3><p class="text-gray-400 text-sm mt-2">Transformers (500/1000 KVA), generator synchronization, ACB, soft‑starters, and earth testing.</p></div>
+          <div><h3 class="text-xl font-semibold">Robotics & Control.</h3><p class="text-gray-400 text-sm mt-2">MATLAB/Simulink, PID & friction compensator, IMU sensor fusion, kinematics/dynamics of robot arms.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. AGENTIC ENGINEERING → ADAPTED TO "Research & Development" -->
+    <section class="overflow-hidden py-8 sm:py-24 video-bg">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold">Research & Development</h2>
+        <p class="text-xl text-blue-400 mt-2">Academic contributions & conferences</p>
+        <p class="text-gray-300 max-w-2xl mx-auto mt-4">Published research in rehabilitation robotics, robotic arm control, and industrial automation.</p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div><h3 class="text-lg font-semibold">IMU Hand Gesture Rehabilitation</h3><p class="text-gray-400 text-sm">YTU Technical Paper 2015 — sensor‑based rehab system for stroke patients.</p></div>
+          <div><h3 class="text-lg font-semibold">Two‑Link Robot Arm Control</h3><p class="text-gray-400 text-sm">IJSER 2017 — PID with friction compensator, dynamic/kinematic analysis.</p></div>
+          <div><h3 class="text-lg font-semibold">DeltaV DCS & SIS Upgrades</h3><p class="text-gray-400 text-sm">Industrial safety and process control optimization (AGRU project).</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. INTEGRATIONS GRID → SKILLS TAGS (original grid style but with tech stack) -->
+    <section class="flex flex-col px-4 py-16 md:py-24 lg:px-8">
+      <div class="max-w-6xl mx-auto text-center w-full">
+        <h2 class="text-3xl md:text-4xl font-bold">Technical Arsenal</h2>
+        <p class="text-gray-400 mt-2 max-w-2xl mx-auto">Tools, software & platforms I master for industrial & research work.</p>
+        <div class="flex flex-wrap justify-center gap-3 mt-10">
+          <span class="skill-tag">LabView</span><span class="skill-tag">Embedded C/C++</span><span class="skill-tag">Keil μVision</span>
+          <span class="skill-tag">Siemens S7‑300</span><span class="skill-tag">Mitsubishi PLC</span><span class="skill-tag">AutoCAD</span>
+          <span class="skill-tag">SolidWorks</span><span class="skill-tag">MATLAB/Simulink</span><span class="skill-tag">Fusion 360</span>
+          <span class="skill-tag">QGIS</span><span class="skill-tag">DeltaV DCS</span><span class="skill-tag">EMCP 4.1/3.1</span>
+          <span class="skill-tag">Intrinsic Safety Barriers</span><span class="skill-tag">Soft‑Starter</span><span class="skill-tag">LaTeX</span>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-10 text-gray-300">
+          <div class="bg-white/5 rounded-xl p-3">PLC Programming</div><div class="bg-white/5 rounded-xl p-3">HMI Configuration</div>
+          <div class="bg-white/5 rounded-xl p-3">DCS/SIS</div><div class="bg-white/5 rounded-xl p-3">Generator Controllers</div>
+          <div class="bg-white/5 rounded-xl p-3">MCC & Starters</div><div class="bg-white/5 rounded-xl p-3">Earth Testing</div>
+          <div class="bg-white/5 rounded-xl p-3">Robotics (Kinematics)</div><div class="bg-white/5 rounded-xl p-3">Instrumentation</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. LATEST BLOG POSTS → PUBLICATIONS & CONFERENCES -->
+    <section id="publications" class="flex flex-col pb-20 md:pb-28">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center">Recent Publications & Conferences</h2>
+        <p class="text-center text-gray-400 mt-2 mb-12">Peer‑reviewed articles and international journal papers</p>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="border border-[#2a2a2a] rounded-2xl p-6"><h3 class="text-xl font-semibold">IMU‑Based Hand Gesture Rehabilitation System</h3><p class="text-blue-400 text-sm mt-2">YTU Technical Paper Series, Jan 2015</p><p class="text-gray-400 text-sm mt-2">Authors: Kaung Khant, Khin Thu Zar Win, Aung Kyaw Hein</p></div>
+          <div class="border border-[#2a2a2a] rounded-2xl p-6"><h3 class="text-xl font-semibold">Kinematic & Dynamic Analysis of Two‑Link Robot Arm</h3><p class="text-blue-400 text-sm mt-2">IJSER Volume 8, Issue 12, Dec 2017</p><p class="text-gray-400 text-sm mt-2">PID + friction compensator, simulation in MATLAB</p></div>
+          <div class="border border-[#2a2a2a] rounded-2xl p-6"><h3 class="text-xl font-semibold">Conference: Hand Gesture Rehab System</h3><p class="text-blue-400 text-sm mt-2">YTU Mechatronics Symposium 2015</p><p class="text-gray-400 text-sm mt-2">Oral presentation on IMU‑based rehabilitation.</p></div>
+        </div>
+        <div class="text-center mt-10"><a href="#" class="text-blue-400 hover:underline">View all publications →</a></div>
+      </div>
+    </section>
+
+    <!-- 10. FREQUENTLY ASKED QUESTIONS (adapted to academic/industry) -->
+    <section class="flex flex-col py-16">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold">Frequently asked questions</h2>
+        <div class="grid md:grid-cols-2 gap-4 mt-10">
+          <button class="border border-[#2a2a2a] rounded-full px-5 py-3 text-left flex justify-between items-center">What is your field of expertise? <i class="fas fa-chevron-down text-gray-500"></i></button>
+          <button class="border border-[#2a2a2a] rounded-full px-5 py-3 text-left flex justify-between items-center">Which PLC platforms do you use? <i class="fas fa-chevron-down"></i></button>
+          <button class="border border-[#2a2a2a] rounded-full px-5 py-3 text-left flex justify-between items-center">Are you open to research collaborations? <i class="fas fa-chevron-down"></i></button>
+          <button class="border border-[#2a2a2a] rounded-full px-5 py-3 text-left flex justify-between items-center">What is your ISA certification status? <i class="fas fa-chevron-down"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. CONVERSION CTA SECTION (contact me) -->
+    <section id="contact" class="flex flex-col bg-transparent -mt-16 rounded-4xl p-8 py-16 md:-mt-20 md:py-20 lg:-mt-32 dark:bg-transparent dark:px-0">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold">Ready to engineer the future together?</h2>
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Looking for opportunities in control systems, industrial automation or robotics R&D. Let's connect.</p>
+        <div class="grid md:grid-cols-2 gap-8 mt-12">
+          <div class="bg-[#161616] rounded-2xl p-8 border border-[#2a2a2a]">
+            <h3 class="text-2xl font-bold"><i class="fas fa-envelope text-blue-400"></i> Get in touch</h3>
+            <p class="text-gray-400 mt-2">Email me for job offers, consulting or research.</p>
+            <a href="mailto:kaung.khant@example.com" class="btn-primary inline-block mt-6 px-6 py-2">kaung.khant@example.com</a>
+          </div>
+          <div class="bg-[#161616] rounded-2xl p-8 border border-[#2a2a2a]">
+            <h3 class="text-2xl font-bold"><i class="fab fa-linkedin text-blue-400"></i> Professional network</h3>
+            <p class="text-gray-400 mt-2">Connect on LinkedIn or download CV (PDF).</p>
+            <a href="#" class="btn-outline inline-block mt-6 px-6 py-2"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="social-links">
-        <a href="#" class="social-link" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-          </svg>
-        </a>
-        <a href="#" class="social-link" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-          </svg>
-        </a>
-        <a href="#" class="social-link" aria-label="Email">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-          </svg>
-        </a>
+  <!-- FOOTER (full internal links adapted from original) -->
+  <footer class="bg-[#0d0d0d] border-t border-[#2a2a2a] pt-12 pb-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+        <div><h4 class="font-semibold text-white">Navigation</h4><ul class="mt-2 space-y-2 text-gray-400"><li><a href="#experience" class="hover:text-white">Experience</a></li><li><a href="#projects" class="hover:text-white">Projects</a></li><li><a href="#skills" class="hover:text-white">Skills</a></li><li><a href="#publications" class="hover:text-white">Publications</a></li></ul></div>
+        <div><h4 class="font-semibold text-white">Resources</h4><ul class="mt-2 space-y-2 text-gray-400"><li><a href="#">CV/Resume (PDF)</a></li><li><a href="#">Google Scholar</a></li><li><a href="#">ResearchGate</a></li><li><a href="#">ISA Resources</a></li></ul></div>
+        <div><h4 class="font-semibold text-white">Connect</h4><ul class="mt-2 space-y-2 text-gray-400"><li><a href="#">LinkedIn</a></li><li><a href="#">GitHub</a></li><li><a href="#">Twitter</a></li><li><a href="mailto:kaung.khant@example.com">Email</a></li></ul></div>
+        <div><h4 class="font-semibold text-white">Legal</h4><ul class="mt-2 space-y-2 text-gray-400"><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
       </div>
-      <p class="footer-copy">© 2024 Kaung Khant Ko Ko Han. All rights reserved.</p>
+      <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-xs">
+        © 2026 Kaung Khant Ko Ko Han — Pixel‑perfect clone of kilo.ai adapted for portfolio | Control Systems Engineer
+      </div>
     </div>
   </footer>
 
   <script>
-// Kilo Portfolio - Vanilla JavaScript
-// Intersection Observer for scroll animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, observerOptions);
-
-// Observe all reveal elements
-document.addEventListener('DOMContentLoaded', () => {
-  const revealElements = document.querySelectorAll('.reveal');
-  revealElements.forEach(el => observer.observe(el));
-});
-
-// Navigation scroll effect
-const nav = document.getElementById('nav');
-let lastScrollY = 0;
-
-window.addEventListener('scroll', () => {
-  const currentScrollY = window.scrollY;
-  
-  // Add scrolled class for background
-  nav.classList.toggle('scrolled', currentScrollY > 50);
-  
-  lastScrollY = currentScrollY;
-});
-
-// Mobile menu functionality
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-
-hamburger?.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  mobileMenu.classList.toggle('open');
-  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-});
-
-// Close mobile menu when clicking links
-const mobileMenuLinks = mobileMenu?.querySelectorAll('a');
-mobileMenuLinks?.forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    mobileMenu.classList.remove('open');
-    document.body.style.overflow = '';
-  });
-});
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      const offsetTop = target.offsetTop - 80; // Account for fixed nav
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
+    // smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       });
-    }
-  });
-});
-
-// Custom cursor effect (optional - only on desktop)
-if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-  const cursor = document.createElement('div');
-  cursor.className = 'cursor-glow';
-  document.body.appendChild(cursor);
-
-  let mouseX = 0, mouseY = 0;
-  let cursorX = 0, cursorY = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
-
-  // Animate cursor with requestAnimationFrame for smooth movement
-  function animateCursor() {
-    cursorX += (mouseX - cursorX) * 0.1;
-    cursorY += (mouseY - cursorY) * 0.1;
-    
-    cursor.style.left = cursorX + 'px';
-    cursor.style.top = cursorY + 'px';
-    
-    requestAnimationFrame(animateCursor);
-  }
-  
-  animateCursor();
-
-  // Show/hide cursor
-  document.addEventListener('mouseenter', () => cursor.classList.add('active'));
-  document.addEventListener('mouseleave', () => cursor.classList.remove('active'));
-
-  // Hover effect on interactive elements
-  const interactiveElements = document.querySelectorAll('a, button, .project-card, .skill-card');
-  interactiveElements.forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-  });
-}
-
-// Parallax effect for hero section (subtle)
-window.addEventListener('scroll', () => {
-  const scrolled = window.pageYOffset;
-  const hero = document.querySelector('.hero');
-  if (hero) {
-    const rate = scrolled * -0.3;
-    hero.style.transform = `translateY(${rate}px)`;
-  }
-});
-
-// Active navigation highlighting
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-
-window.addEventListener('scroll', () => {
-  let current = '';
-  
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if (scrollY >= (sectionTop - 200)) {
-      current = section.getAttribute('id');
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href').slice(1) === current) {
-      link.classList.add('active');
-    }
-  });
-});
-
-// Project card hover tilt effect (subtle)
-document.querySelectorAll('.project-card').forEach(card => {
-  card.addEventListener('mousemove', (e) => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    
-    const rotateX = (y - centerY) / 10;
-    const rotateY = (centerX - x) / 10;
-    
-    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
-  });
-  
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = '';
-  });
-});
-
-// Skill bars animation on scroll
-const skillBars = document.querySelectorAll('.skill-bar');
-const skillObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const bar = entry.target;
-      const level = bar.style.getPropertyValue('--level');
-      setTimeout(() => {
-        bar.style.width = level;
-      }, 200);
-    }
-  });
-}, { threshold: 0.5 });
-
-skillBars.forEach(bar => skillObserver.observe(bar));
-
-// Add loading animation
-window.addEventListener('load', () => {
-  document.body.classList.add('loaded');
-  
-  // Trigger initial animations
-  setTimeout(() => {
-    document.querySelectorAll('.hero .reveal').forEach((el, index) => {
-      setTimeout(() => {
-        el.classList.add('visible');
-      }, index * 200);
     });
-  }, 100);
-});
-
-// Prevent FOUC (Flash of Unstyled Content)
-document.documentElement.style.setProperty('--visibility', 'visible');
-
-// Keyboard navigation
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
-    hamburger.classList.remove('active');
-    mobileMenu.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-});
-
-// Performance optimization - Debounce scroll events
-function debounce(func, wait) {
-  let timeout;
-  return function executedFunction(...args) {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
-}
-
-// Apply debounce to scroll handlers
-const debouncedScroll = debounce(() => {
-  // Scroll-based animations here
-}, 10);
-
-window.addEventListener('scroll', debouncedScroll);
-
-// Touch device detection for better mobile experience
-function isTouchDevice() {
-  return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-}
-
-if (isTouchDevice()) {
-  document.body.classList.add('touch-device');
-}
-
-// Console Easter egg
-console.log('%c Kilo Portfolio ', 'background: #000; color: #00ffc8; font-size: 16px; font-weight: bold; padding: 10px;');
-console.log('%c Designed with precision and elegance ', 'background: #111; color: #888; font-size: 12px; padding: 5px;');
-</script>
+  </script>
 </body>
 </html>
