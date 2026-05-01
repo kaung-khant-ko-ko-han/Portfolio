@@ -1,0 +1,1666 @@
+🎯 PRIMARY OBJECTIVE: Create a PIXEL-PERFECT visual clone of the page at "https://kilo.ai/" (from the website "Kilo: The Open Source AI Coding Agent for VS Code, JetBrains, and your CLI").
+
+⚠️ CRITICAL — VISUAL FIDELITY IS THE #1 PRIORITY:
+- This is a CLONING task. The result must be visually IDENTICAL to the original website.
+- Do NOT "improve", "clean up", or "modernize" any aspect of the design.
+- Do NOT invent, guess, or substitute any colors, fonts, images, or layout values.
+- Every value below was extracted directly from the original website's HTML and CSS.
+
+══════════════════════════════════════════
+  DESIGN SYSTEM (use these EXACT values)
+══════════════════════════════════════════
+
+FONTS (extracted from the site):
+- No custom fonts detected; match the original
+
+COLOR PALETTE (extracted from CSS — use these EXACT colors, do NOT substitute):
+- Extract from the original
+
+
+
+
+
+══════════════════════════════════════════
+  REUSABLE COMPONENTS
+══════════════════════════════════════════
+
+
+
+══════════════════════════════════════════
+  PAGE SECTIONS WITH CONTENT (in order)
+══════════════════════════════════════════
+
+1. [HERO] Hero Main Banner
+  H1: "AI for everyoneone"
+  P: "Coding agent for developersAlways on AI for everyone"
+  P: "Hosted 🦞 OpenClaw — no self-hosting required"
+  P: "VS Code, CLI, JetBrains, & more"
+  Text: "AI for everyoneone"
+  Text: "AI for every"
+  Text: "oneone"
+  Text: "Coding agent for developersAlways on AI for everyone"
+  Link: "Get your OpenClaw agent"
+  Link: "Start Coding"
+
+2. [SECTION] Value Proposition Lead
+  H2: "From pull request to hosted OpenClaw — we've got you covered."
+
+3. [SECTION] Product Comparison Overview
+  H2: "KiloClaw"
+  H3: "Everything OpenClaw can do, fully managed"
+  H2: "Kilo Code"
+  H3: "Open source coding agent"
+  P: "OpenClaw without the self-hosting headaches"
+  P: "Deploy in under 60 seconds. 500+ models. Zero markup."
+  P: "No SSH, no Docker, no yaml files. Your OpenClaw agent deploys in seconds, connects to Telegram, Discord, or Slack, and runs scheduled tasks while you sleep."
+  P: "End-to-End AI coding"
+  P: "Code with any model in VS Code, CLI, Cloud agents"
+  P: "The most popular open source AI coding agent. Code smarter with AI that understands your codebase and works the way you do."
+  • "One-click deploy, auto-restart & updates"
+  • "Telegram, Discord, Slack & more"
+  • "Scheduled tasks, cron & automations"
+  • "Security whitepaper-backed infrastructure"
+  • "VS Code, JetBrains, and CLI"
+  • "6 agent modes for every workflow"
+  • "Cloud agents and code review"
+  • "Open source, Apache-2.0 license"
+  Link: "Get your OpenClaw agent"
+  Link: "Learn More"
+  Link: "Start Coding"
+  Link: "All Features"
+
+4. [SECTION] Customer Logo Cloud
+  H2: "Trusted by developers at the world's most innovative companies"
+
+5. [SECTION] Key Performance Metrics
+  P: "Open Source Product of the Month"
+  P: "Kilo Coders"
+  P: "tokens processed"
+
+6. [SECTION] KiloClaw Managed Features | Behaviors: video background
+  H2: "Hosted OpenClaw"
+  P: "Meet KiloClaw"
+  P: "Everything OpenClaw can do, minus the self-hosting complexity. Deploy your own AI agent that runs 24/7 — without SSH, Docker, or yaml files."
+  Text: "One-click deploy."
+  Text: "No SSH, no Docker, no yaml files. Go from zero to a running OpenClaw agent in under 5 minutes."
+  Text: "Chat where you are."
+  Text: "Connect via Telegram, Discord, or Slack. Your agent runs shell commands, controls browsers, and acts on your behalf — not just chat."
+  Text: "Fully managed."
+  Text: "Auto-restart, monitoring, security updates, and 500+ AI models via Kilo Gateway at zero markup."
+
+7. [SECTION] Agentic Engineering Capabilities | Behaviors: video background
+  H2: "Built for agentic engineering"
+  P: "Multiple modes, one agent"
+  P: "Kilo Code ships with specialized agent modes so you can switch contexts without switching tools."
+  Text: "Code Mode."
+  Text: "Write, refactor, and ship production-ready code with an AI agent that understands your entire codebase."
+  Text: "Architect Mode."
+  Text: "Plan complex features and get structured guidance before writing a single line of code."
+  Text: "Debug Mode."
+  Text: "Identify and fix bugs fast with an agent that reads errors, traces issues, and suggests fixes."
+  Text: "Architect"
+  Text: "Custom"
+  Button: "Ask"
+  Button: "Architect"
+  Button: "Code"
+  Button: "Debug"
+  Button: "Custom"
+  Button: ""
+
+8. [SECTION] Integrations and Ecosystem Grid
+  H2: "Use Kilo Everywhere"
+  P: "Kilo works where you work. Build alone or with your team."
+  Text: "KiloClaw"
+  Text: "VS Code"
+  Text: "JetBrains"
+  Text: "IntelliJ"
+  Text: "PyCharm"
+  Text: "WebStorm"
+  Text: "Cloud Agents"
+  Text: "App Builder"
+  Text: "Code Reviewer"
+  Text: "Gateway"
+  Link: "KiloClaw"
+  Link: "VS Code"
+  Link: "JetBrains"
+  Link: "IntelliJ IDEAIntelliJ"
+  Link: "PyCharmPyCharm"
+
+9. [SECTION] Latest Blog Posts
+  H2: "Recent posts"
+  H3: "How I Built a Claw-Powered Dashboard That Helps Us Work"
+  H3: "The New AI Problem Is a Lack of New Data"
+  H3: "The GitHub Copilot News is Just the Latest Sign That the Era of Free Compute is Over"
+  P: "Read the latest news and updates from the Kilo Code team."
+  Link: "How I Built a Claw-Powered Dashboard That Helps Us WorkThe pattern behind turning a proactive AI agent into a work pipeline."
+  Link: "The New AI Problem Is a Lack of New DataWhy AI labs are buying coding tools and giving away free products"
+  Link: "The GitHub Copilot News is Just the Latest Sign That the Era of Free Compute is OverThe era of model freedom is just beginning"
+  Link: "All posts"
+
+10. [SECTION] Frequently Asked Questions
+  H2: "Frequently asked questions"
+  H3: "Is Kilo Code free?"
+  H3: "How does Kilo handle code privacy?"
+  H3: "What IDEs does Kilo support?"
+  H3: "How do Cloud Agents work?"
+  H3: "Why switch from Cursor to Kilo Code?"
+  Button: "Is Kilo Code free?"
+  Button: "How does Kilo handle code privacy?"
+  Button: "What IDEs does Kilo support?"
+  Button: "How do Cloud Agents work?"
+  Button: "Why switch from Cursor to Kilo Code?"
+
+11. [SECTION] Conversion CTA Section
+  H2: "Ready to get started?"
+  H3: "🦞 KiloClaw"
+  H3: "⚡ Kilo Code"
+  P: "Choose your path — a hosted OpenClaw agent that runs 24/7, or a coding agent for your IDE."
+  P: "Hosted OpenClawDeploy your own AI agent in seconds. No SSH, no Docker — connects to Telegram, Slack, and more."
+  P: "Open Source Coding AgentWrite, debug, and refactor code in VS Code, JetBrains, or CLI. 500+ models."
+  Text: "Hosted OpenClaw"
+  Text: "Open Source Coding Agent"
+  Link: "Get your OpenClaw agent"
+  Link: "Start Coding"
+
+══════════════════════════════════════════
+  EXTRACTED STYLES PER SECTION
+══════════════════════════════════════════
+
+- Hero Main Banner: opacity: 0; display: flex; flexDirection: column; alignItems: center; justifyContent: center; padding: 0px 32px; position: relative; overflow: hidden; backgroundColor: transparent
+- Value Proposition Lead: display: flex; flexDirection: column; alignItems: center; gap: 32px
+- Product Comparison Overview: opacity: 0; display: flex; flexDirection: column; padding: 64px 24px; maxWidth: 1152px; margin: 0 auto; width: 100%
+- Customer Logo Cloud: opacity: 0; display: flex; flexDirection: column; padding: 48px 0px; margin: 0 auto
+- Key Performance Metrics: opacity: 0; display: flex; flexDirection: column; padding: 32px 0px
+- KiloClaw Managed Features: padding: 32px 0px; overflow: hidden
+- Agentic Engineering Capabilities: padding: 32px 0px; overflow: hidden
+- Integrations and Ecosystem Grid: opacity: 0; display: flex; flexDirection: column; padding: 64px 16px
+- Latest Blog Posts: opacity: 0; display: flex; flexDirection: column
+- Frequently Asked Questions: opacity: 0; display: flex; flexDirection: column; padding: 64px 0px
+- Conversion CTA Section: opacity: 0; display: flex; flexDirection: column; padding: 32px; backgroundColor: transparent
+
+INTERACTIVE BEHAVIORS:
+- KiloClaw Managed Features: video background
+- Agentic Engineering Capabilities: video background
+
+
+
+REFERENCE SCREENSHOTS (match these EXACTLY):
+- Desktop: https://image.thum.io/get/width/1440/crop/900/noanimate/https://kilo.ai/
+- Mobile: https://image.thum.io/get/width/390/crop/844/noanimate/https://kilo.ai/
+- Full page: https://image.thum.io/get/width/1440/noanimate/https://kilo.ai/
+Use these screenshots as the primary visual reference to match layout, colors, and spacing.
+
+══════════════════════════════════════════
+  VISUAL FIDELITY RULES (MANDATORY)
+══════════════════════════════════════════
+
+1. COLOR ACCURACY: Every background-color, text color, border color, and accent color MUST match the extracted values EXACTLY. Do NOT lighten, darken, adjust opacity, or substitute any color. If the extracted color is "#1a1a2e", use "#1a1a2e" — not a similar shade.
+2. Use ONLY the fonts listed above. Import them if needed.
+3. Use the exact image URLs provided.
+4. LAYOUT FIDELITY: Reproduce the exact display, flex-direction, grid-template-columns, gap, align-items, and justify-content values from the extracted styles. Do NOT switch flex to grid or vice versa.
+5. HEADER/NAV BACKGROUNDS: Use ONLY the exact backgroundColor extracted. If it is solid, keep it solid — do NOT add transparency, blur, backdrop-filter, or glassmorphism.
+6. BACKGROUND IMAGES: If a section has a background image, render as a CSS background-image — NOT as a separate <img> element or split layout.
+7. OPACITY & OVERLAYS: Replicate exactly. Do not add or remove overlays.
+8. POSITIONING: Replicate fixed/sticky/absolute with exact top/left/right/bottom/z-index values.
+9. FULL-WIDTH/FULL-HEIGHT: If a section uses min-height: 100vh, keep it. Do not collapse hero sections.
+10. INCLUDE ALL TEXT: Every heading, paragraph, list item, button label, and link text MUST appear. Do NOT omit, summarize, or abbreviate any text.
+11. DO NOT add visual effects (shadows, gradients, blur, rounded corners, animations) that are not present in the extracted data.
+12. Preserve all interactive behaviors: sticky headers, animations, carousels, dropdowns.
+
+══════════════════════════════════════════
+  PAGE SCOPE & ARCHITECTURE NOTES
+══════════════════════════════════════════
+
+📄 CURRENT PAGE: This is the HOME PAGE (root: /).
+⚠️ SINGLE-PAGE FOCUS: Build ONLY this page (the home page at "/"). Do NOT build any other pages yet. Other pages will be provided in subsequent prompts as a continuation of this website project.
+
+Header and Footer MUST be separate, reusable components (e.g., Header.tsx/Footer.tsx) so they can be shared across all pages. Do NOT inline header/footer into the page.
+
+🔗 INTERNAL LINKS:
+Header/Nav Links:
+  - "Kilo" → /
+  - "Pricing" → /pricing
+  - "Support" → /support
+  - "Docs(opens in new tab)" → /docs
+  - "Sign in" → /api/impact/redirect
+
+Footer Links:
+  - "Kilo" → /
+  - "DiscordDiscord" → /discord
+  - "GitHubGitHub" → /github
+  - "IDE" → /install
+  - "CLI" → /cli
+  - "Slack" → /slack
+  - "Cloud" → /cloud
+  - "Security Agent" → /security-agent
+  - "Customers" → /customers/plug-and-pay
+  - "Teams" → /teams
+  - "Enterprise" → /enterprise
+  - "Early Access" → /next
+  - "Pricing" → /pricing
+  - "Documentation" → /docs
+  - "Articles" → /articles
+  - "OpenClaw Workflows" → /kiloclaw/openclaw-for
+  - "OpenClaw Integrations" → /kiloclaw/integrations
+  - "KiloClaw Alternatives" → /kiloclaw/alternatives
+  - "About" → /about
+  - "Open Source" → /open
+  - "Events" → /events
+  - "Kilo League" → /league
+  - "Hackathons" → /hackathons
+  - "Partner Program" → /partners
+  - "Responsible Disclosure" → /security
+  - "All Alternatives" → /kilo-code/alternatives
+  - "vs Roo Code" → /kilo-code/vs/roo-code
+  - "vs Cursor" → /kilo-code/vs/cursor
+  - "vs Windsurf" → /kilo-code/vs/windsurf
+  - "vs GitHub Copilot" → /kilo-code/vs/copilot
+  - "vs Claude Code" → /kilo-code/vs/claude-code
+  - "vs Cline" → /kilo-code/vs/cline
+  - "vs Tabnine" → /kilo-code/vs/tabnine
+  - "vs Replit" → /kilo-code/vs/replit
+  - "vs Lovable" → /kilo-code/vs/lovable
+  - "vs CodeRabbit" → /landing/coderabbit
+  - "vs Augment Code" → /kilo-code/vs/augment-code
+  - "vs xCloud" → /kiloclaw/alternatives/xcloud-alternative
+  - "vs MyClaw" → /kiloclaw/alternatives/myclaw-alternative
+  - "vs Hostinger" → /kiloclaw/alternatives/hostinger-alternative
+  - "Self-Hosted" → /kiloclaw/hosting
+  - "Leaderboard" → /leaderboard
+  - "Open Source Models" → /open-source-models
+  - "Launch Partners" → /launch-partner
+  - "Terms" → /terms
+  - "Privacy" → /privacy
+  - "Get Support" → /support
+  - "Report Abuse" → /abuse
+
+In-page Links:
+  - "Learn More" → /kiloclaw
+  - "All Features" → /code
+  - "VS Code" → /landing/vs-code
+  - "JetBrains" → /install
+  - "CLI" → /cli
+  - "Cloud Agents" → /cloud
+  - "App Builder" → /appbuilder
+  - "SlackSlack" → /slack
+  - "Code Reviewer" → /code-reviewer
+  - "Gateway" → /gateway
+  - "Gastown" → /gastown
+
+All detected internal pages:
+  - / ("Kilo")
+  - /pricing ("Pricing")
+  - /support ("Get Support")
+  - /docs ("Documentation")
+  - /api/impact/redirect ("Sign in")
+  - /kiloclaw ("Learn More")
+  - /code ("All Features")
+  - /landing/vs-code ("VS Code")
+  - /install ("IDE")
+  - /cli ("CLI")
+  - /cloud ("Cloud")
+  - /appbuilder ("App Builder")
+  - /slack ("Slack")
+  - /code-reviewer ("Code Reviewer")
+  - /gateway ("Gateway")
+  - /gastown ("Gastown")
+  - /discord ("DiscordDiscord")
+  - /github ("GitHubGitHub")
+  - /security-agent ("Security Agent")
+  - /customers/plug-and-pay ("Customers")
+  - /teams ("Teams")
+  - /enterprise ("Enterprise")
+  - /next ("Early Access")
+  - /articles ("Articles")
+  - /kiloclaw/openclaw-for ("OpenClaw Workflows")
+  - /kiloclaw/integrations ("OpenClaw Integrations")
+  - /kiloclaw/alternatives ("KiloClaw Alternatives")
+  - /about ("About")
+  - /open ("Open Source")
+  - /events ("Events")
+  - /league ("Kilo League")
+  - /hackathons ("Hackathons")
+  - /partners ("Partner Program")
+  - /security ("Responsible Disclosure")
+  - /kilo-code/alternatives ("All Alternatives")
+  - /kilo-code/vs/roo-code ("vs Roo Code")
+  - /kilo-code/vs/cursor ("vs Cursor")
+  - /kilo-code/vs/windsurf ("vs Windsurf")
+  - /kilo-code/vs/copilot ("vs GitHub Copilot")
+  - /kilo-code/vs/claude-code ("vs Claude Code")
+  - /kilo-code/vs/cline ("vs Cline")
+  - /kilo-code/vs/tabnine ("vs Tabnine")
+  - /kilo-code/vs/replit ("vs Replit")
+  - /kilo-code/vs/lovable ("vs Lovable")
+  - /landing/coderabbit ("vs CodeRabbit")
+  - /kilo-code/vs/augment-code ("vs Augment Code")
+  - /kiloclaw/alternatives/xcloud-alternative ("vs xCloud")
+  - /kiloclaw/alternatives/myclaw-alternative ("vs MyClaw")
+  - /kiloclaw/alternatives/hostinger-alternative ("vs Hostinger")
+  - /kiloclaw/hosting ("Self-Hosted")
+  - /leaderboard ("Leaderboard")
+  - /open-source-models ("Open Source Models")
+  - /launch-partner ("Launch Partners")
+  - /terms ("Terms")
+  - /privacy ("Privacy")
+  - /abuse ("Report Abuse")
+
+Link Rules:
+- Preserve ALL internal links with correct paths. Do NOT change, remove, or invent paths.
+- Header/footer nav links must use proper routing (e.g., React Router) so future pages work when added.
+- Do NOT create placeholder pages for other routes — just ensure links/routes are defined.
+
+🔄 MULTI-PAGE NOTE: This prompt covers ONE page only. Subsequent prompts will provide additional pages. Reuse the Header/Footer components across all pages.
+
+See the JSON specification below for complete section content and styling data.
+
+---
+
+JSON SPECIFICATION:
+```json
+{
+  "projectMeta": {
+    "originalUrl": "https://kilo.ai/",
+    "title": "Kilo: The Open Source AI Coding Agent for VS Code, JetBrains, and your CLI",
+    "description": "Build, ship, and iterate faster with Kilo, the most popular open source AI coding agent. Secure, local-first, 500+ models. Start faster today.",
+    "fonts": [],
+    "colorPalette": [],
+    "cssVariables": {},
+    "backgroundImages": [],
+    "viewport": "width=device-width, initial-scale=1",
+    "screenshots": {
+      "desktop": "https://image.thum.io/get/width/1440/crop/900/noanimate/https://kilo.ai/",
+      "mobile": "https://image.thum.io/get/width/390/crop/844/noanimate/https://kilo.ai/",
+      "full": "https://image.thum.io/get/width/1440/noanimate/https://kilo.ai/"
+    },
+    "currentPage": {
+      "path": "/",
+      "name": "Home",
+      "isHomePage": true
+    },
+    "internalLinks": [
+      {
+        "href": "/",
+        "text": "Kilo",
+        "location": "footer"
+      },
+      {
+        "href": "/pricing",
+        "text": "Pricing",
+        "location": "footer"
+      },
+      {
+        "href": "/support",
+        "text": "Get Support",
+        "location": "footer"
+      },
+      {
+        "href": "/docs",
+        "text": "Documentation",
+        "location": "footer"
+      },
+      {
+        "href": "/api/impact/redirect",
+        "text": "Sign in",
+        "location": "header"
+      },
+      {
+        "href": "/kiloclaw",
+        "text": "Learn More",
+        "location": "body"
+      },
+      {
+        "href": "/code",
+        "text": "All Features",
+        "location": "body"
+      },
+      {
+        "href": "/landing/vs-code",
+        "text": "VS Code",
+        "location": "body"
+      },
+      {
+        "href": "/install",
+        "text": "IDE",
+        "location": "footer"
+      },
+      {
+        "href": "/cli",
+        "text": "CLI",
+        "location": "footer"
+      },
+      {
+        "href": "/cloud",
+        "text": "Cloud",
+        "location": "footer"
+      },
+      {
+        "href": "/appbuilder",
+        "text": "App Builder",
+        "location": "body"
+      },
+      {
+        "href": "/slack",
+        "text": "Slack",
+        "location": "footer"
+      },
+      {
+        "href": "/code-reviewer",
+        "text": "Code Reviewer",
+        "location": "body"
+      },
+      {
+        "href": "/gateway",
+        "text": "Gateway",
+        "location": "body"
+      },
+      {
+        "href": "/gastown",
+        "text": "Gastown",
+        "location": "body"
+      },
+      {
+        "href": "/discord",
+        "text": "DiscordDiscord",
+        "location": "footer"
+      },
+      {
+        "href": "/github",
+        "text": "GitHubGitHub",
+        "location": "footer"
+      },
+      {
+        "href": "/security-agent",
+        "text": "Security Agent",
+        "location": "footer"
+      },
+      {
+        "href": "/customers/plug-and-pay",
+        "text": "Customers",
+        "location": "footer"
+      },
+      {
+        "href": "/teams",
+        "text": "Teams",
+        "location": "footer"
+      },
+      {
+        "href": "/enterprise",
+        "text": "Enterprise",
+        "location": "footer"
+      },
+      {
+        "href": "/next",
+        "text": "Early Access",
+        "location": "footer"
+      },
+      {
+        "href": "/articles",
+        "text": "Articles",
+        "location": "footer"
+      },
+      {
+        "href": "/kiloclaw/openclaw-for",
+        "text": "OpenClaw Workflows",
+        "location": "footer"
+      },
+      {
+        "href": "/kiloclaw/integrations",
+        "text": "OpenClaw Integrations",
+        "location": "footer"
+      },
+      {
+        "href": "/kiloclaw/alternatives",
+        "text": "KiloClaw Alternatives",
+        "location": "footer"
+      },
+      {
+        "href": "/about",
+        "text": "About",
+        "location": "footer"
+      },
+      {
+        "href": "/open",
+        "text": "Open Source",
+        "location": "footer"
+      },
+      {
+        "href": "/events",
+        "text": "Events",
+        "location": "footer"
+      },
+      {
+        "href": "/league",
+        "text": "Kilo League",
+        "location": "footer"
+      },
+      {
+        "href": "/hackathons",
+        "text": "Hackathons",
+        "location": "footer"
+      },
+      {
+        "href": "/partners",
+        "text": "Partner Program",
+        "location": "footer"
+      },
+      {
+        "href": "/security",
+        "text": "Responsible Disclosure",
+        "location": "footer"
+      },
+      {
+        "href": "/kilo-code/alternatives",
+        "text": "All Alternatives",
+        "location": "footer"
+      },
+      {
+        "href": "/kilo-code/vs/roo-code",
+        "text": "vs Roo Code",
+        "location": "footer"
+      },
+      {
+        "href": "/kilo-code/vs/cursor",
+        "text": "vs Cursor",
+        "location": "footer"
+      },
+      {
+        "href": "/kilo-code/vs/windsurf",
+        "text": "vs Windsurf",
+        "location": "footer"
+      },
+      {
+        "href": "/kilo-code/vs/copilot",
+        "text": "vs GitHub Copilot",
+        "location": "footer"
+      },
+      {
+        "href": "/kilo-code/vs/claude-code",
+        "text": "vs Claude Code",
+        "location": "footer"
+      },
+      {
+        "href": "/kilo-code/vs/cline",
+        "text": "vs Cline",
+        "location": "footer"
+      },
+      {
+        "href": "/kilo-code/vs/tabnine",
+        "text": "vs Tabnine",
+        "location": "footer"
+      },
+      {
+        "href": "/kilo-code/vs/replit",
+        "text": "vs Replit",
+        "location": "footer"
+      },
+      {
+        "href": "/kilo-code/vs/lovable",
+        "text": "vs Lovable",
+        "location": "footer"
+      },
+      {
+        "href": "/landing/coderabbit",
+        "text": "vs CodeRabbit",
+        "location": "footer"
+      },
+      {
+        "href": "/kilo-code/vs/augment-code",
+        "text": "vs Augment Code",
+        "location": "footer"
+      },
+      {
+        "href": "/kiloclaw/alternatives/xcloud-alternative",
+        "text": "vs xCloud",
+        "location": "footer"
+      },
+      {
+        "href": "/kiloclaw/alternatives/myclaw-alternative",
+        "text": "vs MyClaw",
+        "location": "footer"
+      },
+      {
+        "href": "/kiloclaw/alternatives/hostinger-alternative",
+        "text": "vs Hostinger",
+        "location": "footer"
+      },
+      {
+        "href": "/kiloclaw/hosting",
+        "text": "Self-Hosted",
+        "location": "footer"
+      },
+      {
+        "href": "/leaderboard",
+        "text": "Leaderboard",
+        "location": "footer"
+      },
+      {
+        "href": "/open-source-models",
+        "text": "Open Source Models",
+        "location": "footer"
+      },
+      {
+        "href": "/launch-partner",
+        "text": "Launch Partners",
+        "location": "footer"
+      },
+      {
+        "href": "/terms",
+        "text": "Terms",
+        "location": "footer"
+      },
+      {
+        "href": "/privacy",
+        "text": "Privacy",
+        "location": "footer"
+      },
+      {
+        "href": "/abuse",
+        "text": "Report Abuse",
+        "location": "footer"
+      }
+    ],
+    "navigation": {
+      "headerLinks": [
+        {
+          "href": "/",
+          "text": "Kilo",
+          "location": "header"
+        },
+        {
+          "href": "/pricing",
+          "text": "Pricing",
+          "location": "nav"
+        },
+        {
+          "href": "/support",
+          "text": "Support",
+          "location": "nav"
+        },
+        {
+          "href": "/docs",
+          "text": "Docs(opens in new tab)",
+          "location": "nav"
+        },
+        {
+          "href": "/api/impact/redirect",
+          "text": "Sign in",
+          "location": "header"
+        }
+      ],
+      "footerLinks": [
+        {
+          "href": "/",
+          "text": "Kilo",
+          "location": "footer"
+        },
+        {
+          "href": "/discord",
+          "text": "DiscordDiscord",
+          "location": "footer"
+        },
+        {
+          "href": "/github",
+          "text": "GitHubGitHub",
+          "location": "footer"
+        },
+        {
+          "href": "/install",
+          "text": "IDE",
+          "location": "footer"
+        },
+        {
+          "href": "/cli",
+          "text": "CLI",
+          "location": "footer"
+        },
+        {
+          "href": "/slack",
+          "text": "Slack",
+          "location": "footer"
+        },
+        {
+          "href": "/cloud",
+          "text": "Cloud",
+          "location": "footer"
+        },
+        {
+          "href": "/security-agent",
+          "text": "Security Agent",
+          "location": "footer"
+        },
+        {
+          "href": "/customers/plug-and-pay",
+          "text": "Customers",
+          "location": "footer"
+        },
+        {
+          "href": "/teams",
+          "text": "Teams",
+          "location": "footer"
+        },
+        {
+          "href": "/enterprise",
+          "text": "Enterprise",
+          "location": "footer"
+        },
+        {
+          "href": "/next",
+          "text": "Early Access",
+          "location": "footer"
+        },
+        {
+          "href": "/pricing",
+          "text": "Pricing",
+          "location": "footer"
+        },
+        {
+          "href": "/docs",
+          "text": "Documentation",
+          "location": "footer"
+        },
+        {
+          "href": "/articles",
+          "text": "Articles",
+          "location": "footer"
+        },
+        {
+          "href": "/kiloclaw/openclaw-for",
+          "text": "OpenClaw Workflows",
+          "location": "footer"
+        },
+        {
+          "href": "/kiloclaw/integrations",
+          "text": "OpenClaw Integrations",
+          "location": "footer"
+        },
+        {
+          "href": "/kiloclaw/alternatives",
+          "text": "KiloClaw Alternatives",
+          "location": "footer"
+        },
+        {
+          "href": "/about",
+          "text": "About",
+          "location": "footer"
+        },
+        {
+          "href": "/open",
+          "text": "Open Source",
+          "location": "footer"
+        },
+        {
+          "href": "/events",
+          "text": "Events",
+          "location": "footer"
+        },
+        {
+          "href": "/league",
+          "text": "Kilo League",
+          "location": "footer"
+        },
+        {
+          "href": "/hackathons",
+          "text": "Hackathons",
+          "location": "footer"
+        },
+        {
+          "href": "/partners",
+          "text": "Partner Program",
+          "location": "footer"
+        },
+        {
+          "href": "/security",
+          "text": "Responsible Disclosure",
+          "location": "footer"
+        },
+        {
+          "href": "/kilo-code/alternatives",
+          "text": "All Alternatives",
+          "location": "footer"
+        },
+        {
+          "href": "/kilo-code/vs/roo-code",
+          "text": "vs Roo Code",
+          "location": "footer"
+        },
+        {
+          "href": "/kilo-code/vs/cursor",
+          "text": "vs Cursor",
+          "location": "footer"
+        },
+        {
+          "href": "/kilo-code/vs/windsurf",
+          "text": "vs Windsurf",
+          "location": "footer"
+        },
+        {
+          "href": "/kilo-code/vs/copilot",
+          "text": "vs GitHub Copilot",
+          "location": "footer"
+        },
+        {
+          "href": "/kilo-code/vs/claude-code",
+          "text": "vs Claude Code",
+          "location": "footer"
+        },
+        {
+          "href": "/kilo-code/vs/cline",
+          "text": "vs Cline",
+          "location": "footer"
+        },
+        {
+          "href": "/kilo-code/vs/tabnine",
+          "text": "vs Tabnine",
+          "location": "footer"
+        },
+        {
+          "href": "/kilo-code/vs/replit",
+          "text": "vs Replit",
+          "location": "footer"
+        },
+        {
+          "href": "/kilo-code/vs/lovable",
+          "text": "vs Lovable",
+          "location": "footer"
+        },
+        {
+          "href": "/landing/coderabbit",
+          "text": "vs CodeRabbit",
+          "location": "footer"
+        },
+        {
+          "href": "/kilo-code/vs/augment-code",
+          "text": "vs Augment Code",
+          "location": "footer"
+        },
+        {
+          "href": "/kiloclaw/alternatives/xcloud-alternative",
+          "text": "vs xCloud",
+          "location": "footer"
+        },
+        {
+          "href": "/kiloclaw/alternatives/myclaw-alternative",
+          "text": "vs MyClaw",
+          "location": "footer"
+        },
+        {
+          "href": "/kiloclaw/alternatives/hostinger-alternative",
+          "text": "vs Hostinger",
+          "location": "footer"
+        },
+        {
+          "href": "/kiloclaw/hosting",
+          "text": "Self-Hosted",
+          "location": "footer"
+        },
+        {
+          "href": "/leaderboard",
+          "text": "Leaderboard",
+          "location": "footer"
+        },
+        {
+          "href": "/open-source-models",
+          "text": "Open Source Models",
+          "location": "footer"
+        },
+        {
+          "href": "/launch-partner",
+          "text": "Launch Partners",
+          "location": "footer"
+        },
+        {
+          "href": "/terms",
+          "text": "Terms",
+          "location": "footer"
+        },
+        {
+          "href": "/privacy",
+          "text": "Privacy",
+          "location": "footer"
+        },
+        {
+          "href": "/support",
+          "text": "Get Support",
+          "location": "footer"
+        },
+        {
+          "href": "/abuse",
+          "text": "Report Abuse",
+          "location": "footer"
+        }
+      ]
+    }
+  },
+  "reusableComponents": [],
+  "pageSections": [
+    {
+      "order": 1,
+      "type": "hero",
+      "label": "Hero Main Banner",
+      "tag": "section",
+      "content": {
+        "headings": [
+          {
+            "level": 1,
+            "text": "AI for everyoneone"
+          }
+        ],
+        "paragraphs": [
+          "Coding agent for developersAlways on AI for everyone",
+          "Hosted 🦞 OpenClaw — no self-hosting required",
+          "VS Code, CLI, JetBrains, & more"
+        ],
+        "listItems": [],
+        "spans": [
+          "AI for everyoneone",
+          "AI for every",
+          "oneone",
+          "Coding agent for developersAlways on AI for everyone"
+        ],
+        "text": "AI for everyoneoneCoding agent for developersAlways on AI for everyoneGet your OpenClaw agentHosted 🦞 OpenClaw — no self-hosting requiredStart CodingVS Code, CLI, JetBrains, & more",
+        "images": [],
+        "links": [
+          {
+            "href": "https://app.kilo.ai/claw",
+            "text": "Get your OpenClaw agent"
+          },
+          {
+            "href": "https://app.kilo.ai/get-started",
+            "text": "Start Coding"
+          }
+        ],
+        "buttons": []
+      },
+      "styles": {
+        "opacity": "0",
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "padding": "0px 32px",
+        "position": "relative",
+        "overflow": "hidden",
+        "backgroundColor": "transparent"
+      },
+      "behavior": {},
+      "className": "relative flex min-h-[calc(100svh-280px)] flex-col items-center justify-center overflow-hidden bg-transparent px-8 pb-0"
+    },
+    {
+      "order": 2,
+      "type": "section",
+      "label": "Value Proposition Lead",
+      "tag": "section",
+      "content": {
+        "headings": [
+          {
+            "level": 2,
+            "text": "From pull request to hosted OpenClaw — we've got you covered."
+          }
+        ],
+        "paragraphs": [],
+        "listItems": [],
+        "spans": [],
+        "text": "From pull request to hosted OpenClaw — we've got you covered.",
+        "images": [],
+        "links": [],
+        "buttons": []
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "gap": "32px"
+      },
+      "behavior": {},
+      "className": "flex flex-col items-center gap-8 pt-16 md:pt-20"
+    },
+    {
+      "order": 3,
+      "type": "section",
+      "label": "Product Comparison Overview",
+      "tag": "section",
+      "content": {
+        "headings": [
+          {
+            "level": 2,
+            "text": "KiloClaw"
+          },
+          {
+            "level": 3,
+            "text": "Everything OpenClaw can do, fully managed"
+          },
+          {
+            "level": 2,
+            "text": "Kilo Code"
+          },
+          {
+            "level": 3,
+            "text": "Open source coding agent"
+          }
+        ],
+        "paragraphs": [
+          "OpenClaw without the self-hosting headaches",
+          "Deploy in under 60 seconds. 500+ models. Zero markup.",
+          "No SSH, no Docker, no yaml files. Your OpenClaw agent deploys in seconds, connects to Telegram, Discord, or Slack, and runs scheduled tasks while you sleep.",
+          "End-to-End AI coding",
+          "Code with any model in VS Code, CLI, Cloud agents",
+          "The most popular open source AI coding agent. Code smarter with AI that understands your codebase and works the way you do."
+        ],
+        "listItems": [
+          "One-click deploy, auto-restart & updates",
+          "Telegram, Discord, Slack & more",
+          "Scheduled tasks, cron & automations",
+          "Security whitepaper-backed infrastructure",
+          "VS Code, JetBrains, and CLI",
+          "6 agent modes for every workflow",
+          "Cloud agents and code review",
+          "Open source, Apache-2.0 license"
+        ],
+        "spans": [],
+        "text": "KiloClawOpenClaw without the self-hosting headachesDeploy in under 60 seconds. 500+ models. Zero markup.Everything OpenClaw can do, fully managedNo SSH, no Docker, no yaml files. Your OpenClaw agent deploys in seconds, connects to Telegram, Discord, or Slack, and runs scheduled tasks while you sleep.One-click deploy, auto-restart & updatesTelegram, Discord, Slack & moreScheduled tasks, cron & automationsSecurity whitepaper-backed infrastructureGet your OpenClaw agentLearn MoreKilo CodeEnd-to-End AI codingCode with any model in VS Code, CLI, Cloud agents</>Open source coding agentThe most popular open source AI coding agent. Code smarter with AI that understands your codebase and works the way you do.VS Code, JetBrains, and CLI6 agent modes for every workflowCloud agents and code reviewOpen source, Apache-2.0 licenseStart CodingAll Features",
+        "images": [
+          {
+            "src": "[inline-svg]",
+            "alt": "Contains 9 SVG element(s)"
+          }
+        ],
+        "links": [
+          {
+            "href": "https://app.kilo.ai/claw",
+            "text": "Get your OpenClaw agent"
+          },
+          {
+            "href": "https://kilo.ai/kiloclaw",
+            "text": "Learn More"
+          },
+          {
+            "href": "https://app.kilo.ai/get-started",
+            "text": "Start Coding"
+          },
+          {
+            "href": "https://kilo.ai/code",
+            "text": "All Features"
+          }
+        ],
+        "buttons": []
+      },
+      "styles": {
+        "opacity": "0",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "64px 24px",
+        "maxWidth": "1152px",
+        "margin": "0 auto",
+        "width": "100%"
+      },
+      "behavior": {},
+      "className": "flex flex-col mx-auto w-full max-w-6xl px-6 py-16 md:py-24"
+    },
+    {
+      "order": 4,
+      "type": "section",
+      "label": "Customer Logo Cloud",
+      "tag": "section",
+      "content": {
+        "headings": [
+          {
+            "level": 2,
+            "text": "Trusted by developers at the world's most innovative companies"
+          }
+        ],
+        "paragraphs": [],
+        "listItems": [],
+        "spans": [],
+        "text": "Trusted by developers at the world's most innovative companiesMeta logoAmazon logoAirbnb logoPayPal logoSquare logoRed Hat logo",
+        "images": [
+          {
+            "src": "[inline-svg]",
+            "alt": "Contains 6 SVG element(s)"
+          }
+        ],
+        "links": [],
+        "buttons": []
+      },
+      "styles": {
+        "opacity": "0",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "48px 0px",
+        "margin": "0 auto"
+      },
+      "behavior": {},
+      "className": "flex flex-col max-w-8xl mx-auto lg:py-12"
+    },
+    {
+      "order": 5,
+      "type": "section",
+      "label": "Key Performance Metrics",
+      "tag": "section",
+      "content": {
+        "headings": [],
+        "paragraphs": [
+          "Open Source Product of the Month",
+          "Kilo Coders",
+          "tokens processed"
+        ],
+        "listItems": [],
+        "spans": [],
+        "text": "#1Open Source Product of the Month2.3M+Kilo Coders25T+tokens processed",
+        "images": [],
+        "links": [],
+        "buttons": []
+      },
+      "styles": {
+        "opacity": "0",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "32px 0px"
+      },
+      "behavior": {},
+      "className": "flex flex-col py-8"
+    },
+    {
+      "order": 6,
+      "type": "section",
+      "label": "KiloClaw Managed Features",
+      "tag": "section",
+      "content": {
+        "headings": [
+          {
+            "level": 2,
+            "text": "Hosted OpenClaw"
+          }
+        ],
+        "paragraphs": [
+          "Meet KiloClaw",
+          "Everything OpenClaw can do, minus the self-hosting complexity. Deploy your own AI agent that runs 24/7 — without SSH, Docker, or yaml files."
+        ],
+        "listItems": [],
+        "spans": [
+          "One-click deploy.",
+          "No SSH, no Docker, no yaml files. Go from zero to a running OpenClaw agent in under 5 minutes.",
+          "Chat where you are.",
+          "Connect via Telegram, Discord, or Slack. Your agent runs shell commands, controls browsers, and acts on your behalf — not just chat.",
+          "Fully managed.",
+          "Auto-restart, monitoring, security updates, and 500+ AI models via Kilo Gateway at zero markup."
+        ],
+        "text": "Hosted OpenClawMeet KiloClawEverything OpenClaw can do, minus the self-hosting complexity. Deploy your own AI agent that runs 24/7 — without SSH, Docker, or yaml files.One-click deploy. No SSH, no Docker, no yaml files. Go from zero to a running OpenClaw agent in under 5 minutes.Chat where you are. Connect via Telegram, Discord, or Slack. Your agent runs shell commands, controls browsers, and acts on your behalf — not just chat.Fully managed. Auto-restart, monitoring, security updates, and 500+ AI models via Kilo Gateway at zero markup.",
+        "images": [
+          {
+            "src": "[inline-svg]",
+            "alt": "Contains 3 SVG element(s)"
+          }
+        ],
+        "links": [],
+        "buttons": []
+      },
+      "styles": {
+        "padding": "32px 0px",
+        "overflow": "hidden"
+      },
+      "behavior": {
+        "hasVideoBackground": true
+      },
+      "className": "overflow-hidden py-8 sm:py-24"
+    },
+    {
+      "order": 7,
+      "type": "section",
+      "label": "Agentic Engineering Capabilities",
+      "tag": "section",
+      "content": {
+        "headings": [
+          {
+            "level": 2,
+            "text": "Built for agentic engineering"
+          }
+        ],
+        "paragraphs": [
+          "Multiple modes, one agent",
+          "Kilo Code ships with specialized agent modes so you can switch contexts without switching tools."
+        ],
+        "listItems": [],
+        "spans": [
+          "Code Mode.",
+          "Write, refactor, and ship production-ready code with an AI agent that understands your entire codebase.",
+          "Architect Mode.",
+          "Plan complex features and get structured guidance before writing a single line of code.",
+          "Debug Mode.",
+          "Identify and fix bugs fast with an agent that reads errors, traces issues, and suggests fixes.",
+          "Architect",
+          "Custom"
+        ],
+        "text": "Built for agentic engineeringMultiple modes, one agentKilo Code ships with specialized agent modes so you can switch contexts without switching tools.Code Mode. Write, refactor, and ship production-ready code with an AI agent that understands your entire codebase.Architect Mode. Plan complex features and get structured guidance before writing a single line of code.Debug Mode. Identify and fix bugs fast with an agent that reads errors, traces issues, and suggests fixes.AskArchitectCodeDebugCustom",
+        "images": [
+          {
+            "src": "[inline-svg]",
+            "alt": "Contains 3 SVG element(s)"
+          }
+        ],
+        "links": [],
+        "buttons": [
+          {
+            "text": "Ask"
+          },
+          {
+            "text": "Architect"
+          },
+          {
+            "text": "Code"
+          },
+          {
+            "text": "Debug"
+          },
+          {
+            "text": "Custom"
+          },
+          {
+            "text": ""
+          }
+        ]
+      },
+      "styles": {
+        "padding": "32px 0px",
+        "overflow": "hidden"
+      },
+      "behavior": {
+        "hasVideoBackground": true
+      },
+      "className": "overflow-hidden py-8 sm:py-24"
+    },
+    {
+      "order": 8,
+      "type": "section",
+      "label": "Integrations and Ecosystem Grid",
+      "tag": "section",
+      "content": {
+        "headings": [
+          {
+            "level": 2,
+            "text": "Use Kilo Everywhere"
+          }
+        ],
+        "paragraphs": [
+          "Kilo works where you work. Build alone or with your team."
+        ],
+        "listItems": [],
+        "spans": [
+          "KiloClaw",
+          "VS Code",
+          "JetBrains",
+          "IntelliJ",
+          "PyCharm",
+          "WebStorm",
+          "Cloud Agents",
+          "App Builder",
+          "Code Reviewer",
+          "Gateway",
+          "Gastown"
+        ],
+        "text": "Use Kilo EverywhereKilo works where you work. Build alone or with your team.KiloClawVS CodeJetBrainsIntelliJ IDEAIntelliJPyCharmPyCharmWebStormWebStormCLICloud AgentsApp BuilderSlackSlackCode ReviewerGatewayGastownKiloClawVS CodeJetBrainsIntelliJ IDEAIntelliJPyCharmPyCharmWebStormWebStormCLICloud AgentsApp BuilderSlackSlackCode ReviewerGatewayGastownKiloClawVS CodeJetBrainsIntelliJ IDEAIntelliJPyCharmPyCharmWebStormWebStormCLICloud AgentsApp BuilderSlackSlackCode ReviewerGatewayGastownStart free with Kilo Auto — no credit card required",
+        "images": [
+          {
+            "src": "[inline-svg]",
+            "alt": "Contains 39 SVG element(s)"
+          }
+        ],
+        "links": [
+          {
+            "href": "https://kilo.ai/kiloclaw",
+            "text": "KiloClaw"
+          },
+          {
+            "href": "https://kilo.ai/landing/vs-code",
+            "text": "VS Code"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "JetBrains"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "IntelliJ IDEAIntelliJ"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "PyCharmPyCharm"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "WebStormWebStorm"
+          },
+          {
+            "href": "https://kilo.ai/cli",
+            "text": "CLI"
+          },
+          {
+            "href": "https://kilo.ai/cloud",
+            "text": "Cloud Agents"
+          },
+          {
+            "href": "https://kilo.ai/appbuilder",
+            "text": "App Builder"
+          },
+          {
+            "href": "https://kilo.ai/slack",
+            "text": "SlackSlack"
+          },
+          {
+            "href": "https://kilo.ai/code-reviewer",
+            "text": "Code Reviewer"
+          },
+          {
+            "href": "https://kilo.ai/gateway",
+            "text": "Gateway"
+          },
+          {
+            "href": "https://kilo.ai/gastown",
+            "text": "Gastown"
+          },
+          {
+            "href": "https://kilo.ai/kiloclaw",
+            "text": "KiloClaw"
+          },
+          {
+            "href": "https://kilo.ai/landing/vs-code",
+            "text": "VS Code"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "JetBrains"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "IntelliJ IDEAIntelliJ"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "PyCharmPyCharm"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "WebStormWebStorm"
+          },
+          {
+            "href": "https://kilo.ai/cli",
+            "text": "CLI"
+          },
+          {
+            "href": "https://kilo.ai/cloud",
+            "text": "Cloud Agents"
+          },
+          {
+            "href": "https://kilo.ai/appbuilder",
+            "text": "App Builder"
+          },
+          {
+            "href": "https://kilo.ai/slack",
+            "text": "SlackSlack"
+          },
+          {
+            "href": "https://kilo.ai/code-reviewer",
+            "text": "Code Reviewer"
+          },
+          {
+            "href": "https://kilo.ai/gateway",
+            "text": "Gateway"
+          },
+          {
+            "href": "https://kilo.ai/gastown",
+            "text": "Gastown"
+          },
+          {
+            "href": "https://kilo.ai/kiloclaw",
+            "text": "KiloClaw"
+          },
+          {
+            "href": "https://kilo.ai/landing/vs-code",
+            "text": "VS Code"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "JetBrains"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "IntelliJ IDEAIntelliJ"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "PyCharmPyCharm"
+          },
+          {
+            "href": "https://kilo.ai/install#jetbrains",
+            "text": "WebStormWebStorm"
+          },
+          {
+            "href": "https://kilo.ai/cli",
+            "text": "CLI"
+          },
+          {
+            "href": "https://kilo.ai/cloud",
+            "text": "Cloud Agents"
+          },
+          {
+            "href": "https://kilo.ai/appbuilder",
+            "text": "App Builder"
+          },
+          {
+            "href": "https://kilo.ai/slack",
+            "text": "SlackSlack"
+          },
+          {
+            "href": "https://kilo.ai/code-reviewer",
+            "text": "Code Reviewer"
+          },
+          {
+            "href": "https://kilo.ai/gateway",
+            "text": "Gateway"
+          },
+          {
+            "href": "https://kilo.ai/gastown",
+            "text": "Gastown"
+          },
+          {
+            "href": "https://app.kilo.ai",
+            "text": "Start free with Kilo Auto — no credit card required"
+          }
+        ],
+        "buttons": []
+      },
+      "styles": {
+        "opacity": "0",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "64px 16px"
+      },
+      "behavior": {},
+      "className": "flex flex-col px-4 py-16 md:py-24 lg:px-8"
+    },
+    {
+      "order": 9,
+      "type": "section",
+      "label": "Latest Blog Posts",
+      "tag": "section",
+      "content": {
+        "headings": [
+          {
+            "level": 2,
+            "text": "Recent posts"
+          },
+          {
+            "level": 3,
+            "text": "How I Built a Claw-Powered Dashboard That Helps Us Work"
+          },
+          {
+            "level": 3,
+            "text": "The New AI Problem Is a Lack of New Data"
+          },
+          {
+            "level": 3,
+            "text": "The GitHub Copilot News is Just the Latest Sign That the Era of Free Compute is Over"
+          }
+        ],
+        "paragraphs": [
+          "Read the latest news and updates from the Kilo Code team."
+        ],
+        "listItems": [],
+        "spans": [],
+        "text": "Recent postsRead the latest news and updates from the Kilo Code team.How I Built a Claw-Powered Dashboard That Helps Us WorkThe pattern behind turning a proactive AI agent into a work pipeline.The New AI Problem Is a Lack of New DataWhy AI labs are buying coding tools and giving away free productsThe GitHub Copilot News is Just the Latest Sign That the Era of Free Compute is OverThe era of model freedom is just beginningAll posts",
+        "images": [],
+        "links": [
+          {
+            "href": "https://blog.kilo.ai/p/bentoboard",
+            "text": "How I Built a Claw-Powered Dashboard That Helps Us WorkThe pattern behind turning a proactive AI agent into a work pipeline."
+          },
+          {
+            "href": "https://blog.kilo.ai/p/the-new-ai-problem-is-a-lack-of-data",
+            "text": "The New AI Problem Is a Lack of New DataWhy AI labs are buying coding tools and giving away free products"
+          },
+          {
+            "href": "https://blog.kilo.ai/p/the-github-copilot-news-is-just-the",
+            "text": "The GitHub Copilot News is Just the Latest Sign That the Era of Free Compute is OverThe era of model freedom is just beginning"
+          },
+          {
+            "href": "https://blog.kilo.ai/",
+            "text": "All posts"
+          }
+        ],
+        "buttons": []
+      },
+      "styles": {
+        "opacity": "0",
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "behavior": {},
+      "className": "flex flex-col pb-20 md:pb-28"
+    },
+    {
+      "order": 10,
+      "type": "section",
+      "label": "Frequently Asked Questions",
+      "tag": "section",
+      "content": {
+        "headings": [
+          {
+            "level": 2,
+            "text": "Frequently asked questions"
+          },
+          {
+            "level": 3,
+            "text": "Is Kilo Code free?"
+          },
+          {
+            "level": 3,
+            "text": "How does Kilo handle code privacy?"
+          },
+          {
+            "level": 3,
+            "text": "What IDEs does Kilo support?"
+          },
+          {
+            "level": 3,
+            "text": "How do Cloud Agents work?"
+          },
+          {
+            "level": 3,
+            "text": "Why switch from Cursor to Kilo Code?"
+          }
+        ],
+        "paragraphs": [],
+        "listItems": [],
+        "spans": [],
+        "text": "Frequently asked questionsDirect answers to common questions about Kilo Code.Is Kilo Code free?How does Kilo handle code privacy?What IDEs does Kilo support?How do Cloud Agents work?Why switch from Cursor to Kilo Code?",
+        "images": [
+          {
+            "src": "[inline-svg]",
+            "alt": "Contains 6 SVG element(s)"
+          }
+        ],
+        "links": [],
+        "buttons": [
+          {
+            "text": "Is Kilo Code free?"
+          },
+          {
+            "text": "How does Kilo handle code privacy?"
+          },
+          {
+            "text": "What IDEs does Kilo support?"
+          },
+          {
+            "text": "How do Cloud Agents work?"
+          },
+          {
+            "text": "Why switch from Cursor to Kilo Code?"
+          }
+        ]
+      },
+      "styles": {
+        "opacity": "0",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "64px 0px"
+      },
+      "behavior": {},
+      "className": "flex flex-col py-16"
+    },
+    {
+      "order": 11,
+      "type": "section",
+      "label": "Conversion CTA Section",
+      "tag": "section",
+      "content": {
+        "headings": [
+          {
+            "level": 2,
+            "text": "Ready to get started?"
+          },
+          {
+            "level": 3,
+            "text": "🦞 KiloClaw"
+          },
+          {
+            "level": 3,
+            "text": "⚡ Kilo Code"
+          }
+        ],
+        "paragraphs": [
+          "Choose your path — a hosted OpenClaw agent that runs 24/7, or a coding agent for your IDE.",
+          "Hosted OpenClawDeploy your own AI agent in seconds. No SSH, no Docker — connects to Telegram, Slack, and more.",
+          "Open Source Coding AgentWrite, debug, and refactor code in VS Code, JetBrains, or CLI. 500+ models."
+        ],
+        "listItems": [],
+        "spans": [
+          "Hosted OpenClaw",
+          "Open Source Coding Agent"
+        ],
+        "text": "Ready to get started?Choose your path — a hosted OpenClaw agent that runs 24/7, or a coding agent for your IDE.🦞 KiloClawHosted OpenClawDeploy your own AI agent in seconds. No SSH, no Docker — connects to Telegram, Slack, and more.Get your OpenClaw agent⚡ Kilo CodeOpen Source Coding AgentWrite, debug, and refactor code in VS Code, JetBrains, or CLI. 500+ models.Start Coding",
+        "images": [],
+        "links": [
+          {
+            "href": "https://app.kilo.ai/claw",
+            "text": "Get your OpenClaw agent"
+          },
+          {
+            "href": "https://app.kilo.ai/get-started",
+            "text": "Start Coding"
+          }
+        ],
+        "buttons": []
+      },
+      "styles": {
+        "opacity": "0",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "32px",
+        "backgroundColor": "transparent"
+      },
+      "behavior": {},
+      "className": "flex flex-col bg-background -mt-16 rounded-4xl p-8 py-16 md:-mt-20 md:py-20 lg:-mt-32 dark:bg-transparent dark:px-0"
+    }
+  ]
+}
+```
